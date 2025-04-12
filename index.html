@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distance Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="main()">
+    <nav class="navbar">
+        <p>📏 Distance Tracker</p>
+    </nav>
+    
+
+    <main class="container">
+        <section class="card">
+            <div id="loc" class="location-box"></div>
+
+            <div class="btn-row">
+                <button id="aBtn" onclick="setA()">A</button>
+                <div id="info" class="info-display"></div>
+                <button id="bBtn" onclick="setB()">B</button>
+            </div>
+
+            <p id="instructions">Click A and B to capture your current locations.</p>
+        </section>
+    </main>
+</body>
+
+</html>
